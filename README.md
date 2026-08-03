@@ -51,5 +51,3 @@ canonical filter implementation:
 | `phase67_backtest.ipynb` | The out-of-sample portfolio backtest |
 | `mpfilter.py` | The MP cleaning filter (imported by the notebooks) |
 
-tly from the frozen snapshot used in the
-paper; the notebooks' saved outputs record the exact numbers reported there.
