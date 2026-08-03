@@ -51,21 +51,5 @@ canonical filter implementation:
 | `phase67_backtest.ipynb` | The out-of-sample portfolio backtest |
 | `mpfilter.py` | The MP cleaning filter (imported by the notebooks) |
 
-## Compiling the paper
-
-```bash
-pdflatex main.tex
-pdflatex main.tex   # run twice so cross-references resolve
-```
-
-No BibTeX needed (the bibliography is embedded); the only requirements are
-standard LaTeX packages (`amsmath`, `tikz`, `hyperref`, `booktabs`).
-
-## Reproducing the analysis
-
-Run the notebooks in phase order with Python 3.11+ (`numpy`, `pandas`, `scipy`,
-`scikit-learn`, `matplotlib`, `yfinance`, `pyarrow`). `phase0` downloads the
-price data from Yahoo Finance and writes a `data/` folder that the later phases
-read. Note that Yahoo's data and the index constituent list drift over time, so
-a fresh download will differ slightly from the frozen snapshot used in the
+tly from the frozen snapshot used in the
 paper; the notebooks' saved outputs record the exact numbers reported there.
